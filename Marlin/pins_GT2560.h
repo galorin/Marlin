@@ -89,8 +89,8 @@
 //#ifdef ULTRA_LCD
 
   #if ENABLED(NEWPANEL)
-  //arduino pin witch triggers an piezzo beeper
-    #define BEEPER 18
+  //arduino pin which triggers an piezzo beeper
+    #define BEEPER_PIN 18
 
     #define LCD_PINS_RS 20
     #define LCD_PINS_ENABLE 17
@@ -104,7 +104,7 @@
     #define BTN_EN2 40
     #define BTN_ENC 19  //the click
 
-    #define SDCARDDETECT 38
+    #define SD_DETECT_PIN 38
 
   #else //old style panel with shift register
     //arduino pin witch triggers an piezzo beeper
@@ -123,11 +123,11 @@
     #define LCD_PINS_D6 20
     #define LCD_PINS_D7 19
 
-    #define SDCARDDETECT -1
+    #define SD_DETECT_PIN -1
   #endif
 #endif //ULTRA_LCD
 
-#ifdef FILAMENT_SENSOR
+#if ENABLED(FILAMENT_SENSOR)
   //Filip added pin for Filament sensor analog input 
   #define FILWIDTH_PIN 05 
 
