@@ -29,6 +29,7 @@
  */
 #ifndef LANGUAGE_CN_H
 #define LANGUAGE_CN_H
+
 #define DISPLAY_CHARSET_ISO10646_CN
 
 #define WELCOME_MSG                         "\xa4\xa5\xa6\xa7"
@@ -86,14 +87,11 @@
 #define MSG_PID_D                           "PID-D"
 #define MSG_PID_C                           "PID-C"
 #define MSG_ACC                             "Accel"
-#define MSG_VXY_JERK                        "Vxy-jerk"
+#define MSG_VX_JERK                         "Vx-jerk"
+#define MSG_VY_JERK                         "Vy-jerk"
 #define MSG_VZ_JERK                         "Vz-jerk"
 #define MSG_VE_JERK                         "Ve-jerk"
 #define MSG_VMAX                            "Vmax "
-#define MSG_X                               "X"
-#define MSG_Y                               "Y"
-#define MSG_Z                               "Z"
-#define MSG_E                               "E"
 #define MSG_VMIN                            "Vmin"
 #define MSG_VTRAV_MIN                       "VTrav min"
 #define MSG_AMAX                            "Amax "
@@ -103,6 +101,10 @@
 #define MSG_YSTEPS                          "Ysteps/mm"
 #define MSG_ZSTEPS                          "Zsteps/mm"
 #define MSG_ESTEPS                          "Esteps/mm"
+#define MSG_E1STEPS                         "E1steps/mm"
+#define MSG_E2STEPS                         "E2steps/mm"
+#define MSG_E3STEPS                         "E3steps/mm"
+#define MSG_E4STEPS                         "E4steps/mm"
 #define MSG_TEMPERATURE                     "\xc9\xd2"
 #define MSG_MOTION                          "\xdf\xb2"
 #define MSG_VOLUMETRIC                      "Filament"
@@ -132,8 +134,8 @@
 #define MSG_CONTROL_RETRACT_SWAP            "Swap Re.mm"
 #define MSG_CONTROL_RETRACTF                "Retract  V"
 #define MSG_CONTROL_RETRACT_ZLIFT           "Hop mm"
-#define MSG_CONTROL_RETRACT_RECOVER         "UnRet +mm"
-#define MSG_CONTROL_RETRACT_RECOVER_SWAP    "S UnRet+mm"
+#define MSG_CONTROL_RETRACT_RECOVER         "UnRet mm"
+#define MSG_CONTROL_RETRACT_RECOVER_SWAP    "S UnRet mm"
 #define MSG_CONTROL_RETRACT_RECOVERF        "UnRet  V"
 #define MSG_AUTORETRACT                     "AutoRetr."
 #define MSG_FILAMENTCHANGE                  "Change filament"
