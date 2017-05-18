@@ -38,11 +38,12 @@
 
 #define LARGE_FLASH true
 
-#define X_STEP_PIN 25
-#define X_DIR_PIN 23
+//-repurposing second extruder as I blew X axis
+#define X_STEP_PIN 49 //25
+#define X_DIR_PIN 47 //23
 #define X_MIN_PIN 22
 #define X_MAX_PIN 24
-#define X_ENABLE_PIN 27
+#define X_ENABLE_PIN 48//27
 
 #define Y_STEP_PIN 31
 #define Y_DIR_PIN 33
@@ -72,9 +73,9 @@
 #define E0_DIR_PIN          45
 #define E0_ENABLE_PIN       41
 
-#define E1_STEP_PIN         49
-#define E1_DIR_PIN          47
-#define E1_ENABLE_PIN       48
+#define E1_STEP_PIN         25// 49
+#define E1_DIR_PIN          23// 47
+#define E1_ENABLE_PIN       27// 48
 
 #define SDPOWER            -1
 #define SDSS               53
